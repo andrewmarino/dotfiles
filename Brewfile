@@ -13,7 +13,12 @@ brew 'trash'
 brew 'php'
 brew 'php@7.4'
 brew 'composer'
+brew 'dnsmasq'
+brew 'nginx'
 brew 'yarn'
+
+# Fonts
+cask 'font-fira-code'
 
 # Apps
 cask '1password'
