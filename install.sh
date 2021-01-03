@@ -17,9 +17,6 @@ brew bundle
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/valet
 
-# Install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-
 # Create directories for projects
 mkdir $HOME/Local
 mkdir $HOME/Valet

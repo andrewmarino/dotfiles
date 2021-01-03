@@ -15,6 +15,7 @@ brew 'php@7.4'
 brew 'composer'
 brew 'dnsmasq'
 brew 'nginx'
+brew 'nvm'
 brew 'yarn'
 
 # Fonts
