@@ -11,6 +11,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias vblist="vboxmanage list runningvms"
 alias catdb="cat *.sql > dump.sql"
 alias ohwell="echo '¯\_(ツ)_/¯' | pbcopy"
+alias dsstoredelete="find . -name '.DS_Store' -type f -delete"
 
 # System
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
