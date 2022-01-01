@@ -1,5 +1,4 @@
 # Composer
-# export PATH=~/.composer/vendor/bin:$PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Load Node.js global installed binaries

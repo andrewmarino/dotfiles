@@ -4,12 +4,12 @@ echo "Starting install script..."
 
 # Check for Oh My Zsh and install if we don't have it
 if test ! $(which omz); then
-/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from our dotfiles
@@ -21,7 +21,7 @@ brew update
 
 # Install all our dependencies with bundle (our Brewfile)
 brew tap homebrew/bundle
-brew bundle
+brew bundle --file $DOTFILES/Brewfile
 
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/valet
