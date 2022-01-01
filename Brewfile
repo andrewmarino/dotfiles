@@ -17,12 +17,12 @@ brew 'php@7.4'
 brew 'composer'
 brew 'dnsmasq'
 brew 'nginx'
-brew 'nvm'
+brew 'pure'
 brew 'tmux'
 brew 'yarn'
 
 # Fonts
-cask 'font-fira-code'
+cask 'font-jetbrains-mono'
 
 # Apps
 cask '1password'
