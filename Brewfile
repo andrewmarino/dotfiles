@@ -8,6 +8,7 @@ tap 'nicoverbruggen/homebrew-cask'
 # Binaries
 brew 'git'
 brew 'mas'
+brew 'stow'
 brew 'trash'
 
 # Dev
