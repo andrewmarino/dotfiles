@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: 'DankMono-Regular, FiraCode-Retina, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Jetbrains Mono, Menlo, Monaco, monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: '#FAC863',
@@ -27,7 +27,7 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    // backgroundColor: '#16161d',
+    backgroundColor: '#011627',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -107,12 +107,12 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    hyperBorder: {
-      // animate: {
-      //   duration: '3000' // default is 16s
-      // },
-      borderWidth: '4px'
-    },
+    // hyperBorder: {
+    //   // animate: {
+    //   //   duration: '3000' // default is 16s
+    //   // },
+    //   borderWidth: '4px'
+    // },
   },
-  plugins: ['hyperborder'],
+  // plugins: ['hyperborder'],
 };

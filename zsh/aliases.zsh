@@ -1,0 +1,5 @@
+alias vim="nvim"
+alias phpserver="php -S localhost:8000"
+alias dsstoredelete="find . -name '.DS_Store' -type f -delete"
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
