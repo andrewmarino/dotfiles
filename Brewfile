@@ -35,11 +35,11 @@ cask 'google-chrome'
 cask 'hyper'
 cask 'imageoptim'
 cask 'local'
+cask 'postman'
 cask 'phpmon'
 cask 'tableplus'
 cask 'transmit'
 cask 'visual-studio-code'
-cask 'zoom'
 
 # Mac App Store
 mas 'iA Writer', id: 775737590
