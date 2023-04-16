@@ -13,14 +13,15 @@ brew 'trash'
 
 # Dev
 brew 'php'
+brew 'php@8.1'
 brew 'php@8.0'
-brew 'php@7.4'
 brew 'composer'
 brew 'dnsmasq'
 brew 'neovim'
 brew 'nginx'
 brew 'pure'
 brew 'tmux'
+brew 'wget'
 brew 'yarn'
 
 # Fonts
