@@ -17,16 +17,7 @@ fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
-# Check for NVM and install if we don't have it
-if test ! $(which nvm); then
-    /bin/sh -c "$(curl -fsSL https://raw.github.com/creationix/nvm/master/install.sh)"
-
-    node_version="16"
-    nvm install $node_version
-    nvm alias default $node_version
-fi
+ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 
 # Update the formulae and Homebrew itself
 brew update
@@ -39,15 +30,5 @@ brew bundle --file $DOTFILES/Brewfile
 stow hyper
 stow nvim
 stow zsh
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Create directories for projects
-mkdir $HOME/Local
-mkdir $HOME/Valet
 
 echo "Install script complete."
