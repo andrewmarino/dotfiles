@@ -18,6 +18,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Pure ZSH theme (no longer included in Oh My Zsh)
 # https://github.com/sindresorhus/pure
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -79,7 +80,7 @@ ZSH_CUSTOM=$DOTFILES/zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
